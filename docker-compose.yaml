@@ -5,6 +5,8 @@ services:
     environment:
       - TOKEN=${TOKEN}
       - STORAGE_NODE=hw3helper_bot_db:5000
+    volumes:
+      - storage:storage
 
   hw3helper_bot_db:
     image: hw3helper_bot_db:latest
