@@ -1,3 +1,4 @@
 FROM hw3helper_bot_base:latest
 
+WORKDIR /bot/
 ENTRYPOINT [ "python3", "bot.py" ]
