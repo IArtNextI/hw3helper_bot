@@ -18,3 +18,5 @@ def resolve(username, element):
         with open(f"storage/{username}/{element}", 'wb') as fout:
             dump(request.get_data(), fout)
             return "OK"
+
+app.run("0.0.0.0", 5000, False)

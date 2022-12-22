@@ -4,4 +4,4 @@ WORKDIR /bot/
 
 EXPOSE 5000
 
-ENTRYPOINT [ "flask", "--app", "api", "run" ]
+ENTRYPOINT [ "python3", "api.py" ]
