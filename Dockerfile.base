@@ -3,4 +3,4 @@ FROM ubuntu:20.04
 RUN mkdir /bot/
 COPY . /bot/
 RUN apt-get update --yes && apt-get upgrade --yes && \
-    pip3 install -r /bot/requirements.txt
+    apt-get install python3-pip && pip3 install -r /bot/requirements.txt
