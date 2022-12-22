@@ -1,2 +1,3 @@
-FROM base:latest
+FROM hw3helper_bot_base:latest
 
+ENTRYPOINT [ "flask", "run", "--app", "api" ]
