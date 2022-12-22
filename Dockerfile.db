@@ -1,4 +1,7 @@
 FROM hw3helper_bot_base:latest
 
 WORKDIR /bot/
+
+EXPOSE 5000
+
 ENTRYPOINT [ "flask", "--app", "api", "run" ]
